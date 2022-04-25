@@ -35,12 +35,6 @@ netsh nps add np name = "Np Authentication for all users"`
         profileid = "0x100f" profiledata = "TRUE"
 Start-Sleep -Seconds 15
 
-#DOWNLOAD AND OPEN NPS EXTENSION
-$DownloadPath = "$HOME/Downloads"
-Start-BitsTransfer "https://download.microsoft.com/download/B/F/F/BFFB4F12-9C09-4DBC-A4AF-08E51875EEA9/NpsExtnForAzureMfaInstaller.exe" -Destination $DownloadPath
-Start-Process $DownloadPath\NpsExtnForAzureMfaInstaller.exe
-Start-Sleep -Seconds 20
-
 #RUN IAS UNRESTRICTED (WORKS SOMETHIMES WHEN SERVER IS NOT CONNECTING)
 cmd.exe /c sc sidtype IAS unrestricted
 Start-Sleep -Seconds 10
