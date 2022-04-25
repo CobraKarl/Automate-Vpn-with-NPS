@@ -18,6 +18,7 @@ Part 2 (use the file: AutomateNPS) Includes (installation on a diffrent server t
 
 Part 3 (Use the file: NPSExtension) and run on the NPS server:
 
+* Install Azure AD Module and downloads (in download folder) and creates a tenent ID file, copy the tenet id when asked for
 *  Download and open NPS extension (needs to be setup in the GUI, See attached link)
 *  Change directory and run Setup file
 
